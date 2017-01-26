@@ -73,7 +73,7 @@ router.get('/', function(req, res) {
 
 // score request
 router.post('/', function(req, res) {
-	var scoreURI = env.baseURL + '/score/' + req.body.context + '?accesskey=' + env.accessKey;
+	var scoreURI = env.baseURL + '/pm/v1/score/' + req.body.context + '?accesskey=' + env.accessKey;
 console.log('=== SCORE ===');
 console.log('  URI  : ' + scoreURI);
 console.log('  Input: ' + JSON.stringify(req.body.input));
